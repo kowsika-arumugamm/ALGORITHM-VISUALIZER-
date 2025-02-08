@@ -1,7 +1,7 @@
 let bars = [];
 let swaps = 0;
 
-// Sorting Complexity Data
+
 const complexities = {
     "bubble": { best: "O(n)", avg: "O(n²)", worst: "O(n²)", space: "O(1)" },
     "selection": { best: "O(n²)", avg: "O(n²)", worst: "O(n²)", space: "O(1)" },
@@ -11,7 +11,7 @@ const complexities = {
     "heap": { best: "O(n log n)", avg: "O(n log n)", worst: "O(n log n)", space: "O(1)" }
 };
 
-// Change algorithm color
+
 function changeAlgorithm() {
     let container = document.getElementById("bars-container");
     container.className = "";
@@ -210,7 +210,7 @@ function startSorting() {
 }
 
 
-// Display Complexity Information
+
 function updateComplexity(algorithm) {
     document.getElementById("time-complexity").innerText = `Best: ${complexities[algorithm].best}, Avg: ${complexities[algorithm].avg}, Worst: ${complexities[algorithm].worst}`;
     document.getElementById("space-complexity").innerText = `Space: ${complexities[algorithm].space}`;
