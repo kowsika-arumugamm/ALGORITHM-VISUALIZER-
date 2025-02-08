@@ -18,7 +18,7 @@ function changeAlgorithm() {
     container.classList.add(document.getElementById("sort-select").value + "-sort");
 }
 
-// Generate array
+
 function generateArray() {
     bars = [];
     swaps = 0;
