@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sorting Algorithm Visualizer</h1>
+    
+    <div class="controls">
+        <input type="text" id="array-input" placeholder="Enter numbers (comma separated)">
+        <button onclick="generateArray()">Generate Array</button>
+
+        <select id="sort-select" onchange="changeAlgorithm()">
+            <option value="bubble">Bubble Sort</option>
+            <option value="selection">Selection Sort</option>
+            <option value="insertion">Insertion Sort</option>
+            <option value="quick">Quick Sort</option>
+            
+            <option value="heap">Heap Sort</option>
+        </select>
+
+        <button onclick="startSorting()">Sort</button>
+    </div>
+
+    <div id="bars-container"></div>
+
+    <div class="info">
+        <p><strong>Time Complexity:</strong> <span id="time-complexity">-</span></p>
+        <p><strong>Space Complexity:</strong> <span id="space-complexity">-</span></p>
+        <p><strong>Swaps:</strong> <span id="swap-count">0</span></p>
+        
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

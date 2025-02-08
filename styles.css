@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.controls {
+    margin: 20px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+#bars-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 400px;
+    width: 80%;
+    background: white;
+    border: 2px solid black;
+    margin: 20px auto;
+    padding: 10px;
+    position: relative;
+}
+
+.bar {
+    width: 20px;
+    margin: 2px;
+    background-color: steelblue;
+    transition: height 0.2s;
+    position: absolute;
+    bottom: 0;
+}
+
+.compare { background-color: red !important; }
+.swap { background-color: yellow !important; }
+.sorted { background-color: green !important; }
+
+.info {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Algorithm-based colors */
+.bubble-sort { background-color: lightblue; }
+.selection-sort { background-color: lightcoral; }
+.insertion-sort { background-color: lightgreen; }
+.quick-sort { background-color: lightgoldenrodyellow; }
+.merge-sort { background-color: lightpink; }
+.heap-sort { background-color: lightskyblue; }
