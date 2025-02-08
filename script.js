@@ -101,7 +101,7 @@ async function selectionSort() {
     }
 }
 
-// Insertion Sort
+
 async function insertionSort() {
     let barsElements = document.querySelectorAll(".bar");
     for (let i = 1; i < bars.length; i++) {
@@ -216,10 +216,10 @@ function updateComplexity(algorithm) {
     document.getElementById("space-complexity").innerText = `Space: ${complexities[algorithm].space}`;
 }
 
-// Update swap count
+
 function updateSwaps() {
     document.getElementById("swap-count").innerText = swaps;
 }
 
-// Generate initial array
+
 generateArray();
